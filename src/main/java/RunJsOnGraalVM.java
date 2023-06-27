@@ -31,11 +31,11 @@ public class RunJsOnGraalVM {
             options.put("js.commonjs-require-cwd", "node_modules");
             options.put("js.commonjs-global-properties", "../src/main/resources/globals.js");
             // (optional) Node.js built-in replacements as a comma separated list.
-            options.put("js.commonjs-core-modules-replacements",
-                    "buffer:buffer/,"+
-                            "path:browserify/,"+
-                            "crypto:crypto-browserify/"
-            );
+//            options.put("js.commonjs-core-modules-replacements",
+//                    "buffer:buffer/,"+
+//                            "path:browserify/,"+
+//                            "crypto:crypto-browserify/"
+//            );
             options.put("log.js.level","FINE");
             options.put("js.esm-eval-returns-exports","true");
 
